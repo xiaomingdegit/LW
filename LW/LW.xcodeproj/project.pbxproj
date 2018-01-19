@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		012B1D4020122D5E006E5DE3 /* UIImage+render.m in Sources */ = {isa = PBXBuildFile; fileRef = 012B1D3F20122D5E006E5DE3 /* UIImage+render.m */; };
 		01D29AE62011A9D200484810 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01D29AE52011A9D200484810 /* Assets.xcassets */; };
 		01D29AE92011A9D200484810 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D29AE72011A9D200484810 /* LaunchScreen.storyboard */; };
 		01D29B182011B42800484810 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D29AFD2011B42800484810 /* main.m */; };
 		01D29B192011B42800484810 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D29AFE2011B42800484810 /* AppDelegate.m */; };
+		01D29B1F2011B99500484810 /* LWEssenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D29B1E2011B99500484810 /* LWEssenceController.m */; };
+		01D29B222011B9B400484810 /* LWPublishController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D29B212011B9B400484810 /* LWPublishController.m */; };
+		01D29B252011B9CF00484810 /* LWNewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D29B242011B9CF00484810 /* LWNewController.m */; };
+		01D29B282011B9F100484810 /* LWMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D29B272011B9F100484810 /* LWMeController.m */; };
+		01D29B2B2011BA1D00484810 /* LWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D29B2A2011BA1D00484810 /* LWTabBarController.m */; };
+		01D29B2E2011BA9C00484810 /* LWFriendTrendController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D29B2D2011BA9C00484810 /* LWFriendTrendController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		012B1D3E20122D5E006E5DE3 /* UIImage+render.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+render.h"; sourceTree = "<group>"; };
+		012B1D3F20122D5E006E5DE3 /* UIImage+render.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+render.m"; sourceTree = "<group>"; };
 		01D29AD92011A9D200484810 /* LW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01D29AE52011A9D200484810 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01D29AE82011A9D200484810 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -21,6 +30,18 @@
 		01D29AFC2011B42800484810 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		01D29AFD2011B42800484810 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		01D29AFE2011B42800484810 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		01D29B1D2011B99500484810 /* LWEssenceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWEssenceController.h; sourceTree = "<group>"; };
+		01D29B1E2011B99500484810 /* LWEssenceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWEssenceController.m; sourceTree = "<group>"; };
+		01D29B202011B9B400484810 /* LWPublishController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWPublishController.h; sourceTree = "<group>"; };
+		01D29B212011B9B400484810 /* LWPublishController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWPublishController.m; sourceTree = "<group>"; };
+		01D29B232011B9CF00484810 /* LWNewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWNewController.h; sourceTree = "<group>"; };
+		01D29B242011B9CF00484810 /* LWNewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWNewController.m; sourceTree = "<group>"; };
+		01D29B262011B9F100484810 /* LWMeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWMeController.h; sourceTree = "<group>"; };
+		01D29B272011B9F100484810 /* LWMeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWMeController.m; sourceTree = "<group>"; };
+		01D29B292011BA1D00484810 /* LWTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWTabBarController.h; sourceTree = "<group>"; };
+		01D29B2A2011BA1D00484810 /* LWTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWTabBarController.m; sourceTree = "<group>"; };
+		01D29B2C2011BA9C00484810 /* LWFriendTrendController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWFriendTrendController.h; sourceTree = "<group>"; };
+		01D29B2D2011BA9C00484810 /* LWFriendTrendController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWFriendTrendController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +55,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		012B1D3D20122CD4006E5DE3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				012B1D3E20122D5E006E5DE3 /* UIImage+render.h */,
+				012B1D3F20122D5E006E5DE3 /* UIImage+render.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		01D29AD02011A9D200484810 = {
 			isa = PBXGroup;
 			children = (
@@ -64,12 +94,12 @@
 		01D29AF22011B42800484810 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				01D29AF32011B42800484810 /* FriendTrend */,
-				01D29AF72011B42800484810 /* AD */,
-				01D29AFF2011B42800484810 /* Publish */,
 				01D29B032011B42800484810 /* Essence */,
-				01D29B072011B42800484810 /* Me */,
 				01D29B0B2011B42800484810 /* New */,
+				01D29AFF2011B42800484810 /* Publish */,
+				01D29AF32011B42800484810 /* FriendTrend */,
+				01D29B072011B42800484810 /* Me */,
+				01D29AF72011B42800484810 /* AD */,
 				01D29B0F2011B42800484810 /* Setting */,
 				01D29B132011B42800484810 /* Main */,
 				01D29AFB2011B42800484810 /* Other */,
@@ -91,6 +121,8 @@
 		01D29AF42011B42800484810 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				01D29B2C2011BA9C00484810 /* LWFriendTrendController.h */,
+				01D29B2D2011BA9C00484810 /* LWFriendTrendController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -143,6 +175,7 @@
 		01D29AFB2011B42800484810 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				012B1D3D20122CD4006E5DE3 /* Category */,
 				01D29AFC2011B42800484810 /* AppDelegate.h */,
 				01D29AFE2011B42800484810 /* AppDelegate.m */,
 				01D29AFD2011B42800484810 /* main.m */,
@@ -163,6 +196,8 @@
 		01D29B002011B42800484810 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				01D29B202011B9B400484810 /* LWPublishController.h */,
+				01D29B212011B9B400484810 /* LWPublishController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -194,6 +229,8 @@
 		01D29B042011B42800484810 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				01D29B1D2011B99500484810 /* LWEssenceController.h */,
+				01D29B1E2011B99500484810 /* LWEssenceController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -225,6 +262,8 @@
 		01D29B082011B42800484810 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				01D29B262011B9F100484810 /* LWMeController.h */,
+				01D29B272011B9F100484810 /* LWMeController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -256,6 +295,8 @@
 		01D29B0C2011B42800484810 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				01D29B232011B9CF00484810 /* LWNewController.h */,
+				01D29B242011B9CF00484810 /* LWNewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -318,6 +359,8 @@
 		01D29B142011B42800484810 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				01D29B292011BA1D00484810 /* LWTabBarController.h */,
+				01D29B2A2011BA1D00484810 /* LWTabBarController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -414,8 +457,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				012B1D4020122D5E006E5DE3 /* UIImage+render.m in Sources */,
+				01D29B2E2011BA9C00484810 /* LWFriendTrendController.m in Sources */,
+				01D29B252011B9CF00484810 /* LWNewController.m in Sources */,
+				01D29B2B2011BA1D00484810 /* LWTabBarController.m in Sources */,
+				01D29B1F2011B99500484810 /* LWEssenceController.m in Sources */,
+				01D29B222011B9B400484810 /* LWPublishController.m in Sources */,
 				01D29B192011B42800484810 /* AppDelegate.m in Sources */,
 				01D29B182011B42800484810 /* main.m in Sources */,
+				01D29B282011B9F100484810 /* LWMeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
