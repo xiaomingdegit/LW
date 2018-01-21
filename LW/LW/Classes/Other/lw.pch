@@ -7,3 +7,18 @@
 //
 
 #import "UIView+frame.h"
+#import "UIBarButtonItem+item.h"
+
+//自定义LWLog
+#ifdef DEBUG
+
+#define LWLog(...) NSLog(__VA_ARGS__)
+
+#else
+
+#define LWLog(...)
+
+#endif
+
+//自定义func
+#define func LWLog(@"%s",__func__);

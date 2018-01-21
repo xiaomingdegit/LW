@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		012B1D4020122D5E006E5DE3 /* UIImage+render.m in Sources */ = {isa = PBXBuildFile; fileRef = 012B1D3F20122D5E006E5DE3 /* UIImage+render.m */; };
-		01D29AE62011A9D200484810 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01D29AE52011A9D200484810 /* Assets.xcassets */; };
 		01D29AE92011A9D200484810 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D29AE72011A9D200484810 /* LaunchScreen.storyboard */; };
 		01D29B182011B42800484810 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D29AFD2011B42800484810 /* main.m */; };
 		01D29B192011B42800484810 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D29AFE2011B42800484810 /* AppDelegate.m */; };
@@ -20,13 +19,14 @@
 		01D29B2E2011BA9C00484810 /* LWFriendTrendController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D29B2D2011BA9C00484810 /* LWFriendTrendController.m */; };
 		01E1CE6F201464E8007F3255 /* LWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E1CE6E201464E8007F3255 /* LWTabBar.m */; };
 		01E1CE722014756A007F3255 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E1CE712014756A007F3255 /* UIView+frame.m */; };
+		01E1CE75201489CC007F3255 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01E1CE74201489CC007F3255 /* Assets.xcassets */; };
+		01E1CE7B20148CEB007F3255 /* UIBarButtonItem+item.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E1CE7A20148CEB007F3255 /* UIBarButtonItem+item.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		012B1D3E20122D5E006E5DE3 /* UIImage+render.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+render.h"; sourceTree = "<group>"; };
 		012B1D3F20122D5E006E5DE3 /* UIImage+render.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+render.m"; sourceTree = "<group>"; };
 		01D29AD92011A9D200484810 /* LW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LW.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		01D29AE52011A9D200484810 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01D29AE82011A9D200484810 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01D29AEA2011A9D200484810 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01D29AFC2011B42800484810 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -49,6 +49,9 @@
 		01E1CE702014756A007F3255 /* UIView+frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
 		01E1CE712014756A007F3255 /* UIView+frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
 		01E1CE7320147798007F3255 /* lw.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lw.pch; sourceTree = "<group>"; };
+		01E1CE74201489CC007F3255 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01E1CE7920148CEB007F3255 /* UIBarButtonItem+item.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+item.h"; sourceTree = "<group>"; };
+		01E1CE7A20148CEB007F3255 /* UIBarButtonItem+item.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+item.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,8 @@
 				012B1D3F20122D5E006E5DE3 /* UIImage+render.m */,
 				01E1CE702014756A007F3255 /* UIView+frame.h */,
 				01E1CE712014756A007F3255 /* UIView+frame.m */,
+				01E1CE7920148CEB007F3255 /* UIBarButtonItem+item.h */,
+				01E1CE7A20148CEB007F3255 /* UIBarButtonItem+item.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -93,9 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				01D29AF22011B42800484810 /* Classes */,
-				01D29AE52011A9D200484810 /* Assets.xcassets */,
 				01D29AE72011A9D200484810 /* LaunchScreen.storyboard */,
 				01D29AEA2011A9D200484810 /* Info.plist */,
+				01E1CE74201489CC007F3255 /* Assets.xcassets */,
 			);
 			path = LW;
 			sourceTree = "<group>";
@@ -457,8 +462,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01E1CE75201489CC007F3255 /* Assets.xcassets in Resources */,
 				01D29AE92011A9D200484810 /* LaunchScreen.storyboard in Resources */,
-				01D29AE62011A9D200484810 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +475,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01E1CE6F201464E8007F3255 /* LWTabBar.m in Sources */,
+				01E1CE7B20148CEB007F3255 /* UIBarButtonItem+item.m in Sources */,
 				012B1D4020122D5E006E5DE3 /* UIImage+render.m in Sources */,
 				01D29B2E2011BA9C00484810 /* LWFriendTrendController.m in Sources */,
 				01D29B252011B9CF00484810 /* LWNewController.m in Sources */,
