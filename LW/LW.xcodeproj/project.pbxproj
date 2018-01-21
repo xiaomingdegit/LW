@@ -19,6 +19,7 @@
 		01D29B2B2011BA1D00484810 /* LWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D29B2A2011BA1D00484810 /* LWTabBarController.m */; };
 		01D29B2E2011BA9C00484810 /* LWFriendTrendController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D29B2D2011BA9C00484810 /* LWFriendTrendController.m */; };
 		01E1CE6F201464E8007F3255 /* LWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E1CE6E201464E8007F3255 /* LWTabBar.m */; };
+		01E1CE722014756A007F3255 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E1CE712014756A007F3255 /* UIView+frame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,9 @@
 		01D29B2D2011BA9C00484810 /* LWFriendTrendController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWFriendTrendController.m; sourceTree = "<group>"; };
 		01E1CE6D201464E8007F3255 /* LWTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWTabBar.h; sourceTree = "<group>"; };
 		01E1CE6E201464E8007F3255 /* LWTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWTabBar.m; sourceTree = "<group>"; };
+		01E1CE702014756A007F3255 /* UIView+frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
+		01E1CE712014756A007F3255 /* UIView+frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
+		01E1CE7320147798007F3255 /* lw.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lw.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 			children = (
 				012B1D3E20122D5E006E5DE3 /* UIImage+render.h */,
 				012B1D3F20122D5E006E5DE3 /* UIImage+render.m */,
+				01E1CE702014756A007F3255 /* UIView+frame.h */,
+				01E1CE712014756A007F3255 /* UIView+frame.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -182,6 +188,7 @@
 				01D29AFC2011B42800484810 /* AppDelegate.h */,
 				01D29AFE2011B42800484810 /* AppDelegate.m */,
 				01D29AFD2011B42800484810 /* main.m */,
+				01E1CE7320147798007F3255 /* lw.pch */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -469,6 +476,7 @@
 				01D29B2B2011BA1D00484810 /* LWTabBarController.m in Sources */,
 				01D29B1F2011B99500484810 /* LWEssenceController.m in Sources */,
 				01D29B222011B9B400484810 /* LWPublishController.m in Sources */,
+				01E1CE722014756A007F3255 /* UIView+frame.m in Sources */,
 				01D29B192011B42800484810 /* AppDelegate.m in Sources */,
 				01D29B182011B42800484810 /* main.m in Sources */,
 				01D29B282011B9F100484810 /* LWMeController.m in Sources */,
@@ -599,6 +607,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TT898TTE6L;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LW/Classes/Other/lw.pch;
 				INFOPLIST_FILE = LW/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -614,6 +624,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TT898TTE6L;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LW/Classes/Other/lw.pch;
 				INFOPLIST_FILE = LW/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

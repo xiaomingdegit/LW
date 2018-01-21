@@ -15,7 +15,7 @@
 @end
 
 @implementation LWTabBar
-
+//懒加载plusButton
 -(UIButton *)plusButton{
     if (_plusButton == nil) {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -28,13 +28,16 @@
     return _plusButton;
 }
 
+//重新布局子控件
 -(void)layoutSubviews{
     [super layoutSubviews];
-    CGFloat butW = self.frame.size.width / (self.items.count + 1);
-    CGFloat butH = self.frame.size.height;
+    //计算每个tabbarButton的宽度
+    CGFloat butW = self.lw_width / (self.items.count + 1);
+    CGFloat butH = self.lw_height;
     NSInteger i = 0;
     for (UIView *item in self.subviews) {
         if ([item isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
+            //给plusButton预留空格
             if (i == 2) {
                 i++;
             }
@@ -43,7 +46,8 @@
             i++;
         }
     }
-    self.plusButton.center = CGPointMake(self.frame.size.width * 0.5, self.frame.size.height * 0.5);
+    //设置plusButton的Frame属性
+    self.plusButton.center = CGPointMake(self.lw_width * 0.5, self.lw_height * 0.5);
 }
 
 @end
