@@ -12,8 +12,11 @@
 #import "LWPublishController.h"
 #import "LWFriendTrendController.h"
 #import "LWMeController.h"
+
 #import "UIImage+render.h"
+
 #import "LWTabBar.h"
+#import "LWNavigationController.h"
 
 @interface LWTabBarController ()
 
@@ -51,7 +54,7 @@
   @{@"controllerName":@"LWEssenceController",@"title":@"精华",@"imageName":@"tabBar_essence_icon",@"clickImageName":@"tabBar_essence_click_icon"},
   @{@"controllerName":@"LWNewController",@"title":@"新帖",@"imageName":@"tabBar_new_click_icon",@"clickImageName":@"tabBar_new_click_icon"},
   @{@"controllerName":@"LWFriendTrendController",@"title":@"关注",@"imageName":@"tabBar_friendTrends_icon",@"clickImageName":@"tabBar_friendTrends_click_icon"},
-  @{@"controllerName":@"LWMeController",@"title":@"我的",@"imageName":@"tabBar_me_icon",@"clickImageName":@"tabBar_me_click_icon"}
+  @{@"controllerName":@"LWMeController",@"title":@"我",@"imageName":@"tabBar_me_icon",@"clickImageName":@"tabBar_me_click_icon"}
   ];
     //遍历infoArray 创建子控制器
     NSMutableArray *controllerArray = [[NSMutableArray alloc] initWithCapacity:4];
@@ -67,7 +70,7 @@
 - (UIViewController *)controllerWithInfo:(NSDictionary *)info{
     Class cls = NSClassFromString(info[@"controllerName"]);
     UIViewController *viewController = [[cls alloc] init];
-    viewController.title = info[@"title"];
+    viewController.tabBarItem.title = info[@"title"];
     viewController.tabBarItem.image = [UIImage imageNamed:info[@"imageName"]];
     //设置tabBar选中图片
     viewController.tabBarItem.selectedImage = [UIImage imageOriginalNamed:info[@"clickImageName"]];
@@ -76,7 +79,7 @@
     //设置tabBarItem字体颜色
     [viewController.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor blackColor]} forState:UIControlStateSelected];
     
-    return [[UINavigationController alloc] initWithRootViewController:viewController];
+    return [[LWNavigationController alloc] initWithRootViewController:viewController];
 }
 
 @end

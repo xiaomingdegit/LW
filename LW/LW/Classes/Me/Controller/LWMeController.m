@@ -21,6 +21,7 @@
 }
 
 - (void)setNavigationItem{
+    self.navigationItem.title = @"我的";
     UIBarButtonItem *nightButtonItem = [UIBarButtonItem itemWithImageName:@"mine-moon-icon" selectImageName:@"mine-moon-icon-click" addTarget:self action:@selector(nightCick:)];
     UIBarButtonItem *settingButtonItem = [UIBarButtonItem itemWithImageName:@"mine-setting-icon" clickImageName:@"mine-setting-icon-click" addTarget:nil action:nil];
     self.navigationItem.rightBarButtonItems = @[settingButtonItem,nightButtonItem];

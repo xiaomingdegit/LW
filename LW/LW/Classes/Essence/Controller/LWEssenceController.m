@@ -21,6 +21,7 @@
 }
 
 - (void)setNavigationItem{
+    self.navigationItem.title = @"精华";
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImageName:@"nav_item_game_icon" clickImageName:@"nav_item_game_click_icon" addTarget:self action:@selector(gameClick)];
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImageName:@"navigationButtonRandom" clickImageName:@"navigationButtonRandomClick" addTarget:nil action:nil];
 }

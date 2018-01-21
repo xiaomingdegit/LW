@@ -21,6 +21,7 @@
 }
 
 - (void)setNavigationItem{
+    self.navigationItem.title = @"我的关注";
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImageName:@"friendsRecommentIcon" clickImageName:@"friendsRecommentIcon-click" addTarget:nil action:nil];
 }
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		011DDD202014BD6900B98B48 /* LWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 011DDD1F2014BD6900B98B48 /* LWNavigationController.m */; };
 		012B1D4020122D5E006E5DE3 /* UIImage+render.m in Sources */ = {isa = PBXBuildFile; fileRef = 012B1D3F20122D5E006E5DE3 /* UIImage+render.m */; };
 		01D29AE92011A9D200484810 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D29AE72011A9D200484810 /* LaunchScreen.storyboard */; };
 		01D29B182011B42800484810 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D29AFD2011B42800484810 /* main.m */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		011DDD1E2014BD6900B98B48 /* LWNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWNavigationController.h; sourceTree = "<group>"; };
+		011DDD1F2014BD6900B98B48 /* LWNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWNavigationController.m; sourceTree = "<group>"; };
 		012B1D3E20122D5E006E5DE3 /* UIImage+render.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+render.h"; sourceTree = "<group>"; };
 		012B1D3F20122D5E006E5DE3 /* UIImage+render.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+render.m"; sourceTree = "<group>"; };
 		01D29AD92011A9D200484810 /* LW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LW.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -376,6 +379,8 @@
 			children = (
 				01D29B292011BA1D00484810 /* LWTabBarController.h */,
 				01D29B2A2011BA1D00484810 /* LWTabBarController.m */,
+				011DDD1E2014BD6900B98B48 /* LWNavigationController.h */,
+				011DDD1F2014BD6900B98B48 /* LWNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -476,6 +481,7 @@
 			files = (
 				01E1CE6F201464E8007F3255 /* LWTabBar.m in Sources */,
 				01E1CE7B20148CEB007F3255 /* UIBarButtonItem+item.m in Sources */,
+				011DDD202014BD6900B98B48 /* LWNavigationController.m in Sources */,
 				012B1D4020122D5E006E5DE3 /* UIImage+render.m in Sources */,
 				01D29B2E2011BA9C00484810 /* LWFriendTrendController.m in Sources */,
 				01D29B252011B9CF00484810 /* LWNewController.m in Sources */,

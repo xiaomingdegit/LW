@@ -21,6 +21,7 @@
 }
 
 - (void)setNavigationItem{
+    self.navigationItem.title = @"新帖";
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImageName:@"MainTagSubIcon" clickImageName:@"MainTagSubIconClick" addTarget:nil action:nil];
 }
 @end
