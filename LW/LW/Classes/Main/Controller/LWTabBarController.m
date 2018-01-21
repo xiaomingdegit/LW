@@ -13,6 +13,7 @@
 #import "LWFriendTrendController.h"
 #import "LWMeController.h"
 #import "UIImage+render.h"
+#import "LWTabBar.h"
 
 @interface LWTabBarController ()
 
@@ -32,10 +33,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //替换系统tabBar
+    [self setTabBar];
+    //设置子控制器
     [self setAllController];
 }
 
--(void)setAllController{
+
+- (void)setTabBar{
+    LWTabBar *tabBar = [[LWTabBar alloc] init];
+    [self setValue:tabBar forKey:@"tabBar"];
+}
+
+- (void)setAllController{
     //保存每个controller信息
     NSArray *infoArray = @[
   @{@"controllerName":@"LWEssenceController",@"title":@"精华",@"imageName":@"tabBar_essence_icon",@"clickImageName":@"tabBar_essence_click_icon"},
@@ -43,18 +53,18 @@
   @{@"controllerName":@"LWFriendTrendController",@"title":@"关注",@"imageName":@"tabBar_friendTrends_icon",@"clickImageName":@"tabBar_friendTrends_click_icon"},
   @{@"controllerName":@"LWMeController",@"title":@"我的",@"imageName":@"tabBar_me_icon",@"clickImageName":@"tabBar_me_click_icon"}
   ];
-    
+    //遍历infoArray 创建子控制器
     NSMutableArray *controllerArray = [[NSMutableArray alloc] initWithCapacity:4];
     for (NSDictionary *info in infoArray) {
         UIViewController *viewController = [self controllerWithInfo:info];
         [controllerArray addObject:viewController];
     }
-    //设置tabBarController的字控制器
+    //设置tabBarController的子控制器
     self.viewControllers = controllerArray;
 }
 
 //设置每一个Controller
--(UIViewController *)controllerWithInfo:(NSDictionary *)info{
+- (UIViewController *)controllerWithInfo:(NSDictionary *)info{
     Class cls = NSClassFromString(info[@"controllerName"]);
     UIViewController *viewController = [[cls alloc] init];
     viewController.title = info[@"title"];

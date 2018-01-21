@@ -18,6 +18,7 @@
 		01D29B282011B9F100484810 /* LWMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D29B272011B9F100484810 /* LWMeController.m */; };
 		01D29B2B2011BA1D00484810 /* LWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D29B2A2011BA1D00484810 /* LWTabBarController.m */; };
 		01D29B2E2011BA9C00484810 /* LWFriendTrendController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D29B2D2011BA9C00484810 /* LWFriendTrendController.m */; };
+		01E1CE6F201464E8007F3255 /* LWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E1CE6E201464E8007F3255 /* LWTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		01D29B2A2011BA1D00484810 /* LWTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWTabBarController.m; sourceTree = "<group>"; };
 		01D29B2C2011BA9C00484810 /* LWFriendTrendController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWFriendTrendController.h; sourceTree = "<group>"; };
 		01D29B2D2011BA9C00484810 /* LWFriendTrendController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWFriendTrendController.m; sourceTree = "<group>"; };
+		01E1CE6D201464E8007F3255 /* LWTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWTabBar.h; sourceTree = "<group>"; };
+		01E1CE6E201464E8007F3255 /* LWTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -375,6 +378,8 @@
 		01D29B162011B42800484810 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				01E1CE6D201464E8007F3255 /* LWTabBar.h */,
+				01E1CE6E201464E8007F3255 /* LWTabBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -457,6 +462,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01E1CE6F201464E8007F3255 /* LWTabBar.m in Sources */,
 				012B1D4020122D5E006E5DE3 /* UIImage+render.m in Sources */,
 				01D29B2E2011BA9C00484810 /* LWFriendTrendController.m in Sources */,
 				01D29B252011B9CF00484810 /* LWNewController.m in Sources */,
