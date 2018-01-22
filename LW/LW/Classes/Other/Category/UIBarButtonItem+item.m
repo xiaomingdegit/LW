@@ -26,4 +26,17 @@
     return [[UIBarButtonItem alloc] initWithCustomView:button];
 }
 
++(instancetype)backItemWithImageName:(NSString *)imageName clickImageName:(NSString *)clickImageName addTarge:(id)target action:(SEL)action title:(NSString *)title{
+    UIButton *button = [[UIButton alloc] init];
+    [button setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    [button setImage:[UIImage imageNamed:clickImageName] forState:UIControlStateHighlighted];
+    [button setTitle:title forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
+    //button 内容向左移动20个像素
+    button.contentEdgeInsets = UIEdgeInsetsMake(0, -10, 0, 0);
+    [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    return [[UIBarButtonItem alloc] initWithCustomView:button];
+}
+
 @end

@@ -14,4 +14,6 @@
 
 +(instancetype)itemWithImageName:(NSString *)imageName selectImageName:(NSString *)selImageName addTarget:(id)target action:(SEL)action;
 
++(instancetype)backItemWithImageName:(NSString *)imageName clickImageName:(NSString *)clickImageName addTarge:(id)target action:(SEL)action title:(NSString *)title;
+
 @end

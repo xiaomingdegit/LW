@@ -18,6 +18,7 @@
 		01D29B282011B9F100484810 /* LWMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D29B272011B9F100484810 /* LWMeController.m */; };
 		01D29B2B2011BA1D00484810 /* LWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D29B2A2011BA1D00484810 /* LWTabBarController.m */; };
 		01D29B2E2011BA9C00484810 /* LWFriendTrendController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D29B2D2011BA9C00484810 /* LWFriendTrendController.m */; };
+		01DC2C542015D8F500B6E80A /* LWSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DC2C532015D8F500B6E80A /* LWSettingController.m */; };
 		01E1CE6F201464E8007F3255 /* LWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E1CE6E201464E8007F3255 /* LWTabBar.m */; };
 		01E1CE722014756A007F3255 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E1CE712014756A007F3255 /* UIView+frame.m */; };
 		01E1CE75201489CC007F3255 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01E1CE74201489CC007F3255 /* Assets.xcassets */; };
@@ -47,6 +48,8 @@
 		01D29B2A2011BA1D00484810 /* LWTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWTabBarController.m; sourceTree = "<group>"; };
 		01D29B2C2011BA9C00484810 /* LWFriendTrendController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWFriendTrendController.h; sourceTree = "<group>"; };
 		01D29B2D2011BA9C00484810 /* LWFriendTrendController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWFriendTrendController.m; sourceTree = "<group>"; };
+		01DC2C522015D8F500B6E80A /* LWSettingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWSettingController.h; sourceTree = "<group>"; };
+		01DC2C532015D8F500B6E80A /* LWSettingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWSettingController.m; sourceTree = "<group>"; };
 		01E1CE6D201464E8007F3255 /* LWTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWTabBar.h; sourceTree = "<group>"; };
 		01E1CE6E201464E8007F3255 /* LWTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWTabBar.m; sourceTree = "<group>"; };
 		01E1CE702014756A007F3255 /* UIView+frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
@@ -346,6 +349,8 @@
 		01D29B102011B42800484810 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				01DC2C522015D8F500B6E80A /* LWSettingController.h */,
+				01DC2C532015D8F500B6E80A /* LWSettingController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -480,6 +485,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01E1CE6F201464E8007F3255 /* LWTabBar.m in Sources */,
+				01DC2C542015D8F500B6E80A /* LWSettingController.m in Sources */,
 				01E1CE7B20148CEB007F3255 /* UIBarButtonItem+item.m in Sources */,
 				011DDD202014BD6900B98B48 /* LWNavigationController.m in Sources */,
 				012B1D4020122D5E006E5DE3 /* UIImage+render.m in Sources */,

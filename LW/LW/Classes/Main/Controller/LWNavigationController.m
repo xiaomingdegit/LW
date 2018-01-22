@@ -26,4 +26,19 @@
     [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
 }
 
+-(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
+   //当push的viewController不是根控制器时
+    if (self.childViewControllers.count > 0) {
+        //统一设置返回按钮
+        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem backItemWithImageName:@"navigationButtonReturn" clickImageName:@"navigationButtonReturnClick" addTarge:self action:@selector(backClick) title:@"返回"];
+        //隐藏底部导航条
+        viewController.hidesBottomBarWhenPushed = YES;
+    }
+    [super pushViewController:viewController animated:animated];
+}
+
+-(void)backClick{
+    [self popViewControllerAnimated:YES];
+}
+
 @end

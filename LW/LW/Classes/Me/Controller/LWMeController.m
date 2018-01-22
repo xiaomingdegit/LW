@@ -7,6 +7,7 @@
 //
 
 #import "LWMeController.h"
+#import "LWSettingController.h"
 
 @interface LWMeController ()
 
@@ -23,12 +24,17 @@
 - (void)setNavigationItem{
     self.navigationItem.title = @"我的";
     UIBarButtonItem *nightButtonItem = [UIBarButtonItem itemWithImageName:@"mine-moon-icon" selectImageName:@"mine-moon-icon-click" addTarget:self action:@selector(nightCick:)];
-    UIBarButtonItem *settingButtonItem = [UIBarButtonItem itemWithImageName:@"mine-setting-icon" clickImageName:@"mine-setting-icon-click" addTarget:nil action:nil];
+    UIBarButtonItem *settingButtonItem = [UIBarButtonItem itemWithImageName:@"mine-setting-icon" clickImageName:@"mine-setting-icon-click" addTarget:self action:@selector(settingCick)];
     self.navigationItem.rightBarButtonItems = @[settingButtonItem,nightButtonItem];
 }
 
 -(void)nightCick:(UIButton *)nightButton{
     nightButton.selected = !nightButton.selected;
+}
+
+-(void)settingCick{
+    LWSettingController *settingController = [[LWSettingController alloc] init];
+    [self.navigationController pushViewController:settingController animated:YES];
 }
 
 #pragma mark - Table view data source
