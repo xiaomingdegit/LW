@@ -8,7 +8,7 @@
 
 #import "LWNavigationController.h"
 
-@interface LWNavigationController ()
+@interface LWNavigationController ()<UIGestureRecognizerDelegate>
 
 @end
 
@@ -16,7 +16,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //设置导航条属性
     [self setNavigationBar];
+    //用全屏手势替换屏幕边缘手势
+    [self setScreenBackGesture];
+}
+
+//    NSLog(@"%@",self.interactivePopGestureRecognizer);
+//    /*
+//     <UIScreenEdgePanGestureRecognizer: 0x7fc104421d70; state = Possible; delaysTouchesBegan = YES; view = <UILayoutContainerView 0x7fc104410f40>; target= <(action=handleNavigationTransition:, target=<_UINavigationInteractiveTransition 0x7fc104421c30>)>>
+//     */
+-(void)setScreenBackGesture{
+    //用全屏手势替换屏幕边缘手势 调用系统滑动返回方法
+    UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self.interactivePopGestureRecognizer.delegate action:@selector(handleNavigationTransition:)];
+    [self.view addGestureRecognizer:panGestureRecognizer];
+    panGestureRecognizer.delegate = self;
+    //禁用系统之前手势
+    self.interactivePopGestureRecognizer.enabled = NO;
+}
+
+-(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
+    //防止在根控制器触发手势
+    return self.childViewControllers.count > 1;
 }
 
 -(void)setNavigationBar{
@@ -36,7 +57,7 @@
     }
     [super pushViewController:viewController animated:animated];
 }
-
+//设置返回按钮点击触发的方法
 -(void)backClick{
     [self popViewControllerAnimated:YES];
 }
