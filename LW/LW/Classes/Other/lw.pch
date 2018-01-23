@@ -9,6 +9,10 @@
 #import "UIView+frame.h"
 #import "UIBarButtonItem+item.h"
 
+#define screenWidth UIScreen.mainScreen.bounds.size.width
+#define screenHeight UIScreen.mainScreen.bounds.size.height
+#define screenBounds UIScreen.mainScreen.bounds
+
 //自定义LWLog
 #ifdef DEBUG
 
