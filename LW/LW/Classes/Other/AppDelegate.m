@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "LWTabBarController.h"
 #import "LWADController.h"
 
 @interface AppDelegate ()
