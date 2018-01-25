@@ -7,10 +7,10 @@
 //
 
 #import "LWADController.h"
-#import <AFNetworking.h>
 #import "LWADItem.h"
 #import <UIImageView+WebCache.h>
 #import "LWTabBarController.h"
+#import "LWNetworkManager.h"
 
 #define iphone5 (screenHeight == 568)
 #define iphone6 (screenHeight == 667)
@@ -62,7 +62,7 @@
     //设置背景图片
     [self setLunchImage];
     //设置广告数据
-    [self setADData];
+    [self loadADData];
     //设置计时器
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(jumpTimeChange) userInfo:nil repeats:YES];
     //为跳过按钮添加点击事件
@@ -89,22 +89,18 @@
     i--;
 }
 
-- (void)setADData{
-    AFHTTPSessionManager *sessionManger = [AFHTTPSessionManager manager];
-    //添加接收数据类型
-    sessionManger.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", nil];
-    //发送请求 获取广告数据
-    [sessionManger GET:@"http://mobads.baidu.com/cpro/ui/mads.php" parameters:@{@"code2":code2} progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSDictionary *dirt = [responseObject[@"ad"] lastObject];
-        self.adItem = [LWADItem initWithDict:dirt];
-        //根据比例 设置广告图片显示的imageView的frame
-        CGFloat imageViewHeight = screenWidth / self.adItem.w * self.adItem.h;
-        self.imageView.frame = CGRectMake(0, 0, screenWidth, imageViewHeight);
-        //设置广告图片
-        [self.imageView sd_setImageWithURL:[NSURL URLWithString:self.adItem.w_picurl]];
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        //输出错误
-        LWLog(@"%@",error);
+- (void)loadADData{
+    
+    [[LWNetworkManager shared] requestWithMothod:GET url:@"http://mobads.baidu.com/cpro/ui/mads.php" parameters:@{@"code2":code2} completion:^(id responseDate, BOOL isSuccess) {
+        if (isSuccess) {
+            NSDictionary *dirt = [responseDate[@"ad"] lastObject];
+            self.adItem = [LWADItem initWithDict:dirt];
+            //根据比例 设置广告图片显示的imageView的frame
+            CGFloat imageViewHeight = screenWidth / self.adItem.w * self.adItem.h;
+            self.imageView.frame = CGRectMake(0, 0, screenWidth, imageViewHeight);
+            //设置广告图片
+            [self.imageView sd_setImageWithURL:[NSURL URLWithString:self.adItem.w_picurl]];
+        }
     }];
 }
 

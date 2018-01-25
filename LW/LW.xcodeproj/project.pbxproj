@@ -13,6 +13,7 @@
 		015306C72017608600FED59C /* LaunchImage-667@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 015306C42017608600FED59C /* LaunchImage-667@2x.png */; };
 		015306C82017608600FED59C /* LaunchImage-736@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 015306C52017608600FED59C /* LaunchImage-736@3x.png */; };
 		015306C92017608600FED59C /* LaunchImage-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 015306C62017608600FED59C /* LaunchImage-568@2x.png */; };
+		01B58E862019FC0100762920 /* LWNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B58E852019FC0100762920 /* LWNetworkManager.m */; };
 		01BA0A1620175B3D00DA5FF0 /* LWADController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BA0A1420175B3D00DA5FF0 /* LWADController.m */; };
 		01BA0A1720175B3D00DA5FF0 /* LWADController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01BA0A1520175B3D00DA5FF0 /* LWADController.xib */; };
 		01D29AE92011A9D200484810 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D29AE72011A9D200484810 /* LaunchScreen.storyboard */; };
@@ -42,6 +43,8 @@
 		015306C42017608600FED59C /* LaunchImage-667@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-667@2x.png"; sourceTree = "<group>"; };
 		015306C52017608600FED59C /* LaunchImage-736@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-736@3x.png"; sourceTree = "<group>"; };
 		015306C62017608600FED59C /* LaunchImage-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568@2x.png"; sourceTree = "<group>"; };
+		01B58E842019FC0100762920 /* LWNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWNetworkManager.h; sourceTree = "<group>"; };
+		01B58E852019FC0100762920 /* LWNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWNetworkManager.m; sourceTree = "<group>"; };
 		01BA0A1320175B3D00DA5FF0 /* LWADController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWADController.h; sourceTree = "<group>"; };
 		01BA0A1420175B3D00DA5FF0 /* LWADController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWADController.m; sourceTree = "<group>"; };
 		01BA0A1520175B3D00DA5FF0 /* LWADController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LWADController.xib; sourceTree = "<group>"; };
@@ -446,6 +449,8 @@
 		01D29B172011B42800484810 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				01B58E842019FC0100762920 /* LWNetworkManager.h */,
+				01B58E852019FC0100762920 /* LWNetworkManager.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -598,6 +603,7 @@
 			files = (
 				01E1CE6F201464E8007F3255 /* LWTabBar.m in Sources */,
 				01DC2C542015D8F500B6E80A /* LWSettingController.m in Sources */,
+				01B58E862019FC0100762920 /* LWNetworkManager.m in Sources */,
 				01E1CE7B20148CEB007F3255 /* UIBarButtonItem+item.m in Sources */,
 				011DDD202014BD6900B98B48 /* LWNavigationController.m in Sources */,
 				012B1D4020122D5E006E5DE3 /* UIImage+render.m in Sources */,
