@@ -16,7 +16,7 @@
     dispatch_once(&onceToken, ^{
         manager = [[LWNetworkManager alloc] init];
         //增加返回接受的类型
-        manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
+        manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", nil];
     });
     return manager;
 }

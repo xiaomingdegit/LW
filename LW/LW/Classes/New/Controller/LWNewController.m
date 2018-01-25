@@ -7,6 +7,7 @@
 //
 
 #import "LWNewController.h"
+#import "LWSubTapController.h"
 
 @interface LWNewController ()
 
@@ -22,6 +23,12 @@
 
 - (void)setNavigationItem{
     self.navigationItem.title = @"新帖";
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImageName:@"MainTagSubIcon" clickImageName:@"MainTagSubIconClick" addTarget:nil action:nil];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImageName:@"MainTagSubIcon" clickImageName:@"MainTagSubIconClick" addTarget:self action:@selector(tagSubClick)];
 }
+
+- (void)tagSubClick{
+    LWSubTapController *subTabController = [[LWSubTapController alloc] init];
+    [self.navigationController pushViewController:subTabController animated:YES];
+}
+
 @end

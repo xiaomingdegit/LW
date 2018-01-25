@@ -10,7 +10,7 @@
 
 @implementation LWADItem
 
-+(instancetype)initWithDict:(NSDictionary *)dict{
++(instancetype)ADItemWithDict:(NSDictionary *)dict{
     LWADItem *ADItem = [[LWADItem alloc] init];
     [ADItem setValuesForKeysWithDictionary:dict];
     return ADItem;

@@ -15,7 +15,7 @@
 @property (nonatomic, assign) CGFloat h;
 @property (nonatomic, assign) CGFloat w;
 
-+(instancetype)initWithDict:(NSDictionary *)dict;
++(instancetype)ADItemWithDict:(NSDictionary *)dict;
 
 
 @end

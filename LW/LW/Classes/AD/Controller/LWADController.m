@@ -94,7 +94,7 @@
     [[LWNetworkManager shared] requestWithMothod:GET url:@"http://mobads.baidu.com/cpro/ui/mads.php" parameters:@{@"code2":code2} completion:^(id responseDate, BOOL isSuccess) {
         if (isSuccess) {
             NSDictionary *dirt = [responseDate[@"ad"] lastObject];
-            self.adItem = [LWADItem initWithDict:dirt];
+            self.adItem = [LWADItem ADItemWithDict:dirt];
             //根据比例 设置广告图片显示的imageView的frame
             CGFloat imageViewHeight = screenWidth / self.adItem.w * self.adItem.h;
             self.imageView.frame = CGRectMake(0, 0, screenWidth, imageViewHeight);
