@@ -52,6 +52,7 @@ static NSString *resueID = @"cell";
     LWSubTapCell *cell = [tableView dequeueReusableCellWithIdentifier:resueID];
     //设置tableCell数据
     cell.item = self.subTapItems[indexPath.row];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 //返回tableView高度
