@@ -25,6 +25,9 @@ static NSString *resueID = @"cell";
     [self loadData];
     //注册LWSubTapCell的Nib
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([LWSubTapCell class]) bundle:nil] forCellReuseIdentifier:resueID];
+    //设置cell分割线 1.隐藏系统tableView的cell分割线 2.设置tableView的背景颜色为系统背景颜色 3.重写tableViewCell的setFrame方法 修改tableViewCell 的高度减一
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.tableView.backgroundColor = LWColor(220, 220, 220);
 }
 
 - (void)loadData{

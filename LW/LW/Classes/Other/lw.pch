@@ -13,6 +13,8 @@
 #define screenHeight UIScreen.mainScreen.bounds.size.height
 #define screenBounds UIScreen.mainScreen.bounds
 
+//
+#define LWColor(r,g,b) [UIColor colorWithRed:r / 255.0 green:g / 255.0 blue:b / 255.0 alpha:1];
 //自定义LWLog
 #ifdef DEBUG
 

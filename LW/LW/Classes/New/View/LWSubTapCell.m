@@ -18,6 +18,11 @@
 @end
 
 @implementation LWSubTapCell
+-(void)setFrame:(CGRect)frame{
+    frame.size.height -= 1;
+    [super setFrame:frame];
+}
+
 //重写item属性set方法 给xib控件设置数据
 -(void)setItem:(LWSubTapItem *)item{
     _item = item;
