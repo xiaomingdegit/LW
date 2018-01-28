@@ -115,4 +115,8 @@
     }
 }
 
+-(void)viewDidDisappear:(BOOL)animated{
+    [[LWNetworkManager shared].tasks makeObjectsPerformSelector:@selector(cancel)];
+}
+
 @end

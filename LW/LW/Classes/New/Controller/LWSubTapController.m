@@ -10,6 +10,7 @@
 #import "LWNetworkManager.h"
 #import "LWSubTapItem.h"
 #import "LWSubTapCell.h"
+#import <SVProgressHUD.h>
 
 @interface LWSubTapController ()
 //保存模型数据
@@ -28,6 +29,13 @@ static NSString *resueID = @"cell";
     //设置cell分割线 1.隐藏系统tableView的cell分割线 2.设置tableView的背景颜色为系统背景颜色 3.重写tableViewCell的setFrame方法 修改tableViewCell 的高度减一
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.backgroundColor = LWColor(220, 220, 220);
+    //提示页面正在加载
+    [SVProgressHUD showWithStatus:@"页面正在加载"];
+}
+
+- (void)viewDidDisappear:(BOOL)animated{
+    [SVProgressHUD dismiss];
+    [[LWNetworkManager shared].tasks makeObjectsPerformSelector:@selector(cancel)];
 }
 
 - (void)loadData{
@@ -42,6 +50,8 @@ static NSString *resueID = @"cell";
             self.subTapItems = [LWSubTapItem subTapItemsWithArray:responseDate];
             //获得数据后 刷新表格
             [self.tableView reloadData];
+            //移除请求提醒
+            [SVProgressHUD dismiss];
         }
     }];
 }
