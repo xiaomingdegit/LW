@@ -14,5 +14,7 @@
 @property (nonatomic, assign) CGFloat lw_width;
 @property (nonatomic, assign) CGFloat lw_x;
 @property (nonatomic, assign) CGFloat lw_y;
+@property (nonatomic, assign) CGFloat lw_centerX;
+@property (nonatomic, assign) CGFloat lw_centerY;
 
 @end

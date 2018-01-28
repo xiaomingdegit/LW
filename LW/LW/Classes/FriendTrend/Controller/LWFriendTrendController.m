@@ -7,6 +7,7 @@
 //
 
 #import "LWFriendTrendController.h"
+#import "LWLoginRegisterController.h"
 
 @interface LWFriendTrendController ()
 
@@ -18,6 +19,12 @@
     [super viewDidLoad];
     //设置导航条内容
     [self setNavigationItem];
+}
+
+//弹出登陆注册页面
+- (IBAction)LonginRegisterClick:(id)sender {
+    LWLoginRegisterController *loginRegisterController = [[LWLoginRegisterController alloc] init];
+    [self presentViewController:loginRegisterController animated:YES completion:nil];
 }
 
 - (void)setNavigationItem{

@@ -50,4 +50,25 @@
     return self.frame.size.height;
 }
 
+-(void)setLw_centerX:(CGFloat)lw_centerX{
+    CGPoint center = self.center;
+    center.x = lw_centerX;
+    self.center = center;
+}
+
+-(CGFloat)lw_centerX{
+    return self.center.x;
+}
+
+-(void)setLw_centerY:(CGFloat)lw_centerY{
+    CGPoint center = self.center;
+    center.y = lw_centerY;
+    self.center = center;
+}
+
+-(CGFloat)lw_centerY{
+    return self.center.y;
+}
+
+
 @end

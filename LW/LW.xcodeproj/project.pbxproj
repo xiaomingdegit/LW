@@ -30,6 +30,14 @@
 		01D29B2B2011BA1D00484810 /* LWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D29B2A2011BA1D00484810 /* LWTabBarController.m */; };
 		01D29B2E2011BA9C00484810 /* LWFriendTrendController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D29B2D2011BA9C00484810 /* LWFriendTrendController.m */; };
 		01DC2C542015D8F500B6E80A /* LWSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DC2C532015D8F500B6E80A /* LWSettingController.m */; };
+		01DCFA4B201DD4C1006330AE /* LWFriendTrendController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01DCFA4A201DD4C1006330AE /* LWFriendTrendController.xib */; };
+		01DCFA4F201DD88B006330AE /* LWLoginRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DCFA4D201DD88B006330AE /* LWLoginRegisterController.m */; };
+		01DCFA50201DD88B006330AE /* LWLoginRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01DCFA4E201DD88B006330AE /* LWLoginRegisterController.xib */; };
+		01DCFA53201DDC45006330AE /* LWLoginRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DCFA52201DDC45006330AE /* LWLoginRegisterView.m */; };
+		01DCFA55201DDC63006330AE /* LWLoginRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01DCFA54201DDC63006330AE /* LWLoginRegisterView.xib */; };
+		01DCFA58201E057D006330AE /* LWFastLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DCFA57201E057D006330AE /* LWFastLoginView.m */; };
+		01DCFA5A201E058E006330AE /* LWFastLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01DCFA59201E058E006330AE /* LWFastLoginView.xib */; };
+		01DCFA5D201E0E04006330AE /* LWFastLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 01DCFA5C201E0E04006330AE /* LWFastLoginButton.m */; };
 		01E1CE6F201464E8007F3255 /* LWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E1CE6E201464E8007F3255 /* LWTabBar.m */; };
 		01E1CE722014756A007F3255 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E1CE712014756A007F3255 /* UIView+frame.m */; };
 		01E1CE75201489CC007F3255 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01E1CE74201489CC007F3255 /* Assets.xcassets */; };
@@ -79,6 +87,18 @@
 		01D29B2D2011BA9C00484810 /* LWFriendTrendController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWFriendTrendController.m; sourceTree = "<group>"; };
 		01DC2C522015D8F500B6E80A /* LWSettingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWSettingController.h; sourceTree = "<group>"; };
 		01DC2C532015D8F500B6E80A /* LWSettingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWSettingController.m; sourceTree = "<group>"; };
+		01DCFA4A201DD4C1006330AE /* LWFriendTrendController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LWFriendTrendController.xib; sourceTree = "<group>"; };
+		01DCFA4C201DD88B006330AE /* LWLoginRegisterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWLoginRegisterController.h; sourceTree = "<group>"; };
+		01DCFA4D201DD88B006330AE /* LWLoginRegisterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWLoginRegisterController.m; sourceTree = "<group>"; };
+		01DCFA4E201DD88B006330AE /* LWLoginRegisterController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LWLoginRegisterController.xib; sourceTree = "<group>"; };
+		01DCFA51201DDC45006330AE /* LWLoginRegisterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWLoginRegisterView.h; sourceTree = "<group>"; };
+		01DCFA52201DDC45006330AE /* LWLoginRegisterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWLoginRegisterView.m; sourceTree = "<group>"; };
+		01DCFA54201DDC63006330AE /* LWLoginRegisterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LWLoginRegisterView.xib; sourceTree = "<group>"; };
+		01DCFA56201E057D006330AE /* LWFastLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWFastLoginView.h; sourceTree = "<group>"; };
+		01DCFA57201E057D006330AE /* LWFastLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWFastLoginView.m; sourceTree = "<group>"; };
+		01DCFA59201E058E006330AE /* LWFastLoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LWFastLoginView.xib; sourceTree = "<group>"; };
+		01DCFA5B201E0E04006330AE /* LWFastLoginButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWFastLoginButton.h; sourceTree = "<group>"; };
+		01DCFA5C201E0E04006330AE /* LWFastLoginButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWFastLoginButton.m; sourceTree = "<group>"; };
 		01E1CE6D201464E8007F3255 /* LWTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWTabBar.h; sourceTree = "<group>"; };
 		01E1CE6E201464E8007F3255 /* LWTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWTabBar.m; sourceTree = "<group>"; };
 		01E1CE702014756A007F3255 /* UIView+frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
@@ -188,6 +208,10 @@
 			children = (
 				01D29B2C2011BA9C00484810 /* LWFriendTrendController.h */,
 				01D29B2D2011BA9C00484810 /* LWFriendTrendController.m */,
+				01DCFA4A201DD4C1006330AE /* LWFriendTrendController.xib */,
+				01DCFA4C201DD88B006330AE /* LWLoginRegisterController.h */,
+				01DCFA4D201DD88B006330AE /* LWLoginRegisterController.m */,
+				01DCFA4E201DD88B006330AE /* LWLoginRegisterController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -202,6 +226,14 @@
 		01D29AF62011B42800484810 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				01DCFA51201DDC45006330AE /* LWLoginRegisterView.h */,
+				01DCFA52201DDC45006330AE /* LWLoginRegisterView.m */,
+				01DCFA54201DDC63006330AE /* LWLoginRegisterView.xib */,
+				01DCFA56201E057D006330AE /* LWFastLoginView.h */,
+				01DCFA57201E057D006330AE /* LWFastLoginView.m */,
+				01DCFA59201E058E006330AE /* LWFastLoginView.xib */,
+				01DCFA5B201E0E04006330AE /* LWFastLoginButton.h */,
+				01DCFA5C201E0E04006330AE /* LWFastLoginButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -552,11 +584,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01DCFA4B201DD4C1006330AE /* LWFriendTrendController.xib in Resources */,
 				01B58E91201A0C7600762920 /* LWSubTapCell.xib in Resources */,
+				01DCFA55201DDC63006330AE /* LWLoginRegisterView.xib in Resources */,
 				01E1CE75201489CC007F3255 /* Assets.xcassets in Resources */,
 				015306C92017608600FED59C /* LaunchImage-568@2x.png in Resources */,
 				01D29AE92011A9D200484810 /* LaunchScreen.storyboard in Resources */,
 				015306C82017608600FED59C /* LaunchImage-736@3x.png in Resources */,
+				01DCFA5A201E058E006330AE /* LWFastLoginView.xib in Resources */,
+				01DCFA50201DD88B006330AE /* LWLoginRegisterController.xib in Resources */,
 				015306C72017608600FED59C /* LaunchImage-667@2x.png in Resources */,
 				01BA0A1720175B3D00DA5FF0 /* LWADController.xib in Resources */,
 			);
@@ -627,6 +663,7 @@
 				01DC2C542015D8F500B6E80A /* LWSettingController.m in Sources */,
 				01B58E862019FC0100762920 /* LWNetworkManager.m in Sources */,
 				01B58E8C201A07F200762920 /* LWSubTapItem.m in Sources */,
+				01DCFA5D201E0E04006330AE /* LWFastLoginButton.m in Sources */,
 				01E1CE7B20148CEB007F3255 /* UIBarButtonItem+item.m in Sources */,
 				011DDD202014BD6900B98B48 /* LWNavigationController.m in Sources */,
 				01B58E89201A03F600762920 /* LWSubTapController.m in Sources */,
@@ -638,6 +675,9 @@
 				01D29B1F2011B99500484810 /* LWEssenceController.m in Sources */,
 				01D29B222011B9B400484810 /* LWPublishController.m in Sources */,
 				01E1CE722014756A007F3255 /* UIView+frame.m in Sources */,
+				01DCFA4F201DD88B006330AE /* LWLoginRegisterController.m in Sources */,
+				01DCFA53201DDC45006330AE /* LWLoginRegisterView.m in Sources */,
+				01DCFA58201E057D006330AE /* LWFastLoginView.m in Sources */,
 				01B58E90201A0C7600762920 /* LWSubTapCell.m in Sources */,
 				0127B2C82018C211003392B9 /* LWADItem.m in Sources */,
 				01D29B192011B42800484810 /* AppDelegate.m in Sources */,
