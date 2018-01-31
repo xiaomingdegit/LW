@@ -29,7 +29,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="100" id="g3S-or-Mhq"/>
                     </constraints>
-                    <state key="normal" title="腾讯微博" image="login_tecent_icon"/>
+                    <state key="normal" title="腾讯微博登陆" image="login_tecent_icon"/>
                     <state key="highlighted" image="login_tecent_icon_click"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZX-Bl-fLa" customClass="LWFastLoginButton">

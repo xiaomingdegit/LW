@@ -91,7 +91,7 @@
 
 - (void)loadADData{
     
-    [[LWNetworkManager shared] requestWithMothod:GET url:@"http://mobads.baidu.com/cpro/ui/mads.php" parameters:@{@"code2":code2} completion:^(id responseDate, BOOL isSuccess) {
+    [[LWNetworkManager shared] requestWithMothod:GET url:@"http://mobads.baidu.com/cpro/ui/mads.php" parameters:@{@"code2":code2,@"entrytype":@"1",@"demo":@"1"} completion:^(id responseDate, BOOL isSuccess) {
         if (isSuccess) {
             NSDictionary *dirt = [responseDate[@"ad"] lastObject];
             self.adItem = [LWADItem ADItemWithDict:dirt];
