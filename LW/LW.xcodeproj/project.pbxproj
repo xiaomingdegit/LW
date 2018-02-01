@@ -13,6 +13,9 @@
 		015306C72017608600FED59C /* LaunchImage-667@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 015306C42017608600FED59C /* LaunchImage-667@2x.png */; };
 		015306C82017608600FED59C /* LaunchImage-736@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 015306C52017608600FED59C /* LaunchImage-736@3x.png */; };
 		015306C92017608600FED59C /* LaunchImage-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 015306C62017608600FED59C /* LaunchImage-568@2x.png */; };
+		015FD38B20232C0100580A0E /* LWCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 015FD38920232C0100580A0E /* LWCollectionViewCell.m */; };
+		015FD38C20232C0100580A0E /* LWCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 015FD38A20232C0100580A0E /* LWCollectionViewCell.xib */; };
+		015FD38F20232CA600580A0E /* LWCollectionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 015FD38E20232CA600580A0E /* LWCollectionItem.m */; };
 		016D70E92021C1E40022774F /* LWLoginRegisterField.m in Sources */ = {isa = PBXBuildFile; fileRef = 016D70E82021C1E40022774F /* LWLoginRegisterField.m */; };
 		016D70EC2021C42D0022774F /* UITextField+placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 016D70EB2021C42D0022774F /* UITextField+placeholder.m */; };
 		01B58E862019FC0100762920 /* LWNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B58E852019FC0100762920 /* LWNetworkManager.m */; };
@@ -57,6 +60,11 @@
 		015306C42017608600FED59C /* LaunchImage-667@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-667@2x.png"; sourceTree = "<group>"; };
 		015306C52017608600FED59C /* LaunchImage-736@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-736@3x.png"; sourceTree = "<group>"; };
 		015306C62017608600FED59C /* LaunchImage-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568@2x.png"; sourceTree = "<group>"; };
+		015FD38820232C0100580A0E /* LWCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWCollectionViewCell.h; sourceTree = "<group>"; };
+		015FD38920232C0100580A0E /* LWCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWCollectionViewCell.m; sourceTree = "<group>"; };
+		015FD38A20232C0100580A0E /* LWCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LWCollectionViewCell.xib; sourceTree = "<group>"; };
+		015FD38D20232CA600580A0E /* LWCollectionItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWCollectionItem.h; sourceTree = "<group>"; };
+		015FD38E20232CA600580A0E /* LWCollectionItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWCollectionItem.m; sourceTree = "<group>"; };
 		016D70E72021C1E40022774F /* LWLoginRegisterField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWLoginRegisterField.h; sourceTree = "<group>"; };
 		016D70E82021C1E40022774F /* LWLoginRegisterField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWLoginRegisterField.m; sourceTree = "<group>"; };
 		016D70EA2021C42D0022774F /* UITextField+placeholder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+placeholder.h"; sourceTree = "<group>"; };
@@ -385,6 +393,8 @@
 		01D29B092011B42800484810 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				015FD38D20232CA600580A0E /* LWCollectionItem.h */,
+				015FD38E20232CA600580A0E /* LWCollectionItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -392,6 +402,9 @@
 		01D29B0A2011B42800484810 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				015FD38820232C0100580A0E /* LWCollectionViewCell.h */,
+				015FD38920232C0100580A0E /* LWCollectionViewCell.m */,
+				015FD38A20232C0100580A0E /* LWCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -601,6 +614,7 @@
 				015306C92017608600FED59C /* LaunchImage-568@2x.png in Resources */,
 				01D29AE92011A9D200484810 /* LaunchScreen.storyboard in Resources */,
 				015306C82017608600FED59C /* LaunchImage-736@3x.png in Resources */,
+				015FD38C20232C0100580A0E /* LWCollectionViewCell.xib in Resources */,
 				01DCFA5A201E058E006330AE /* LWFastLoginView.xib in Resources */,
 				01DCFA50201DD88B006330AE /* LWLoginRegisterController.xib in Resources */,
 				015306C72017608600FED59C /* LaunchImage-667@2x.png in Resources */,
@@ -672,10 +686,12 @@
 				01E1CE6F201464E8007F3255 /* LWTabBar.m in Sources */,
 				016D70EC2021C42D0022774F /* UITextField+placeholder.m in Sources */,
 				01DC2C542015D8F500B6E80A /* LWSettingController.m in Sources */,
+				015FD38F20232CA600580A0E /* LWCollectionItem.m in Sources */,
 				01B58E862019FC0100762920 /* LWNetworkManager.m in Sources */,
 				01B58E8C201A07F200762920 /* LWSubTapItem.m in Sources */,
 				01DCFA5D201E0E04006330AE /* LWFastLoginButton.m in Sources */,
 				016D70E92021C1E40022774F /* LWLoginRegisterField.m in Sources */,
+				015FD38B20232C0100580A0E /* LWCollectionViewCell.m in Sources */,
 				01E1CE7B20148CEB007F3255 /* UIBarButtonItem+item.m in Sources */,
 				011DDD202014BD6900B98B48 /* LWNavigationController.m in Sources */,
 				01B58E89201A03F600762920 /* LWSubTapController.m in Sources */,
